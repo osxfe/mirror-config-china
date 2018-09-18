@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "fs-extra": "^7.0.0",
+    "global-tunnel-ng": "^2.6.0",
+    "got": "^9.2.2",
     "is-elevated": "^2.0.1"
   },
   "description": "Mirrors in China about node.js",
