@@ -1,4 +1,4 @@
-mirror-config-china
+mirror-config-sankuai
 ===========
 
 [![NPM version](https://img.shields.io/npm/v/mirror-config-china.svg?style=flat-square)](https://www.npmjs.com/package/mirror-config-china)
@@ -7,17 +7,17 @@ mirror-config-china
 [![codecov](https://img.shields.io/codecov/c/github/gucong3000/mirror-config-china.svg)](https://codecov.io/gh/gucong3000/mirror-config-china)
 [![David](https://img.shields.io/david/gucong3000/mirror-config-china.svg)](https://david-dm.org/gucong3000/mirror-config-china)
 
-为中国内地的Node.js开发者准备的镜像配置，大大提高node模块安装速度。
+为美团的Node.js开发者准备的镜像配置，大大提高node模块安装速度。
 
 ## 特性
 
 - 支持Windows和其他操作系统
-- 自动配置各个node模块的安装源为淘宝镜像
+- 自动配置各个node模块的安装源为`npm.sankuai.com`镜像
 
 ## 安装
 
 ```bash
-npm i -g mirror-config-china --registry=https://registry.npm.taobao.org
+npm i -g mirror-config-china --registry=http://r.npm.sankuai.com
 # 查看npm配置
 npm config list
 # 查看环境变量
@@ -29,7 +29,7 @@ source ~/.bashrc && env
 ### `--registry=https://registry.npm.taobao.org`
 registry.npmjs.com 镜像URL
 
-### `--bin-mirrors-prefix=https://npm.taobao.org/mirrors`
+### `--bin-mirrors-prefix=http://npm.sankuai.com/mirrors`
 npm.taobao.org/mirrors 镜像URL，会覆盖下文中的`{bin-mirrors}`
 
 ### `--apt-mirrors-prefix=https://mirrors.tuna.tsinghua.edu.cn`
